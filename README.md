@@ -1,9 +1,14 @@
 # Textbook Covers
 
-Textbooks covers for 
- Foundations of Economic Analysis & Explanation
- International Finance Lectures
- Macroeconomics in One Equation
+My textbook covers for 
+
+Foundations of Economic Analysis & Explanation
+
+International Finance Lectures
+
+Macroeconomics in One Equation
+
+
 
 2019 Course Website - Macroeconomics
 https://sites.google.com/site/19bc3033/
