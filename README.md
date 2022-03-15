@@ -4,9 +4,9 @@ My textbook covers for
 
 Foundations of Economic Analysis & Explanation
 
-International Finance Lectures
+International Finance Lectures: Global Economy and Monetary System
 
-Macroeconomics in One Equation
+Macroeconomics in One Equation: From Data and Theory to Applications
 
 
 
