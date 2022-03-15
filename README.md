@@ -2,11 +2,11 @@
 
 My textbook covers for 
 
-Foundations of Economic Analysis & Explanation
+Foundations of Economic Analysis & Explanation, 2020, Cognella, CA
 
-International Finance Lectures: Global Economy and Monetary System
+International Finance Lectures: Global Economy and Monetary System, 2021, Cognella, CA
 
-Macroeconomics in One Equation: From Data and Theory to Applications
+Macroeconomics in One Equation: From Data and Theory to Applications, 2022, Cognella, CA
 
 
 
