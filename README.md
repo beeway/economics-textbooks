@@ -9,6 +9,11 @@ International Finance Lectures: Global Economy and Monetary System, 2021, Cognel
 Macroeconomics in One Equation: From Data and Theory to Applications, 2022, Cognella, CA
 
 
+My textbook slides for
+
+Corporate Finance & Macroeconomics in One Equation 
+
+
 My course materials
 
 2019 Course Website - Macroeconomics
