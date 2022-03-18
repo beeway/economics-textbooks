@@ -1,6 +1,6 @@
 # Textbook Covers and Slides
 
-The project contains
+The project contains published textbook covers, sample slides, and course links.
 
 My textbook covers for 
 
