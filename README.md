@@ -1,4 +1,4 @@
-# Textbook Covers
+# Textbook Covers and Slides
 
 My textbook covers for 
 
@@ -9,6 +9,7 @@ International Finance Lectures: Global Economy and Monetary System, 2021, Cognel
 Macroeconomics in One Equation: From Data and Theory to Applications, 2022, Cognella, CA
 
 
+My course materials
 
 2019 Course Website - Macroeconomics
 https://sites.google.com/site/19bc3033/
