@@ -1,5 +1,7 @@
 # Textbook Covers and Slides
 
+The project contains
+
 My textbook covers for 
 
 Foundations of Economic Analysis & Explanation, 2020, Cognella, CA
