@@ -4,16 +4,16 @@ The project contains published textbook covers, sample slides, and course links.
 
 My textbook covers for 
 
-Foundations of Economic Analysis & Explanation, 2020, Cognella, CA
+[1] Foundations of Economic Analysis & Explanation, 2020, Cognella, CA
 
-International Finance Lectures: Global Economy and Monetary System, 2021, Cognella, CA
+[2] International Finance Lectures: Global Economy and Monetary System, 2021, Cognella, CA
 
-Macroeconomics in One Equation: From Data and Theory to Applications, 2022, Cognella, CA
+[3] Macroeconomics in One Equation: From Data and Theory to Applications, 2022, Cognella, CA
 
 
 My textbook slides for
 
-Corporate Finance & Macroeconomics in One Equation 
+Corporate Financial Decisions & Macroeconomics in One Equation 
 
 
 My course materials
@@ -28,3 +28,4 @@ https://sites.google.com/site/19e160/
 https://sites.google.com/site/19e437/
 
 
+# More to come! Fiat Lux!
