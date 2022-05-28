@@ -13,8 +13,11 @@ My textbook covers for
 
 My textbook slides for
 
-Corporate Financial Decisions & Macroeconomics in One Equation 
+FoEAE Folder
+MinOE Folder
+IFL Folder
 
+Corporate Financial Decisions & Macroeconomics in One Equation 
 
 My course materials
 
