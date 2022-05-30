@@ -2,7 +2,8 @@
 
 The project contains published textbook covers, sample slides, and course links.
 
-My textbook covers for 
+
+Textbook materials for 
 
 [1] Foundations of Economic Analysis & Explanation, 2020, Cognella, CA
 
@@ -11,15 +12,8 @@ My textbook covers for
 [3] Macroeconomics in One Equation: From Data and Theory to Applications, 2022, Cognella, CA
 
 
-My textbook slides for
+Textbook slides for Corporate Financial Decisions & Macroeconomics in One Equation 
 
-FoEAE Folder
-MinOE Folder
-IFL Folder
-
-Corporate Financial Decisions & Macroeconomics in One Equation 
-
-My course materials
 
 2019 Course Website - Macroeconomics
 https://sites.google.com/site/19bc3033/
