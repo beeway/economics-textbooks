@@ -3,7 +3,7 @@
 The project contains published textbook covers, sample slides, and course links.
 
 
-Textbook materials for 
+
 
 [1] Foundations of Economic Analysis & Explanation, 2020, Cognella, CA
 
