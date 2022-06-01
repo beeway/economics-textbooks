@@ -1,4 +1,4 @@
-# Textbook Covers, Notes and Slides
+# Textbook Materials, Notes and Slides
 
 The project contains published textbook covers, lecture slides, and course links.
 
