@@ -11,7 +11,11 @@ The project contains published textbook covers, lecture slides, and course links
 [3] Macroeconomics in One Equation: From Data and Theory to Applications, 2022, Cognella, CA
 
 
-Textbook slides for Corporate Financial Decisions & Macroeconomics in One Equation 
+
+Textbook Slides: Corporate Finance (2021) & Macroeconomics (2022)
+
+Textbook Slides: International Trade (2019) and International Finance (2021)
+
 
 
 2019 Course Website - Macroeconomics
