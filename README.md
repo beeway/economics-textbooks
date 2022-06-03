@@ -16,6 +16,7 @@ Textbook Slides: Corporate Finance (2021) & Macroeconomics (2022)
 
 Textbook Slides: International Trade (2019) and International Finance (2021)
 
+Textbook Notes: Data Analysis & Foundations &  Macro & International Finance & Public Finance 
 
 
 2019 Course Website - Macroeconomics
@@ -24,9 +25,11 @@ https://sites.google.com/site/19bc3033/
 2020 Course Website - Microeconomics
 https://sites.google.com/site/19e160/
 
+2020 Course Website - Public Finance
+https://sites.google.com/site/20econ445/
+
 2020 Course Website - International Finance
 https://sites.google.com/site/19e437/
-
 
 # More to come! Fiat Lux!
 
