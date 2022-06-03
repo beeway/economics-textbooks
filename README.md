@@ -28,6 +28,9 @@ https://sites.google.com/site/19e160/
 2020 Course Website - Public Finance
 https://sites.google.com/site/20econ445/
 
+2019 Course Webiste - International Trade
+https://sites.google.com/site/19bc3047/
+
 2020 Course Website - International Finance
 https://sites.google.com/site/19e437/
 
