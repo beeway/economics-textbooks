@@ -1,6 +1,6 @@
 # Textbook Materials: Notes and Slides
 
-The project contains published textbook covers, lecture slides, and course links.
+The project contains published textbook covers, lecture slides, student projects, and course links.
 
 
 
