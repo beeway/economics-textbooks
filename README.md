@@ -12,12 +12,20 @@ The project contains published textbook covers, lecture slides, student projects
 
 
 
-Textbook Slides: Corporate Finance (2021) and Macroeconomics (2022)
+Textbook Slides: 
+* Corporate Finance (2021) 
+* Financial Derivatives (2018)
+* Macroeconomics Overview (2022)
+* International Trade (2019)
+* International Finance (2021)
 
-Textbook Slides: International Trade (2019) and International Finance (2021)
-
-Textbook Notes: Corporate Finance; Data Analysis; Foundations;  
-Macroeconomics; International Finance; Public Finance 
+Textbook Notes: 
+* Corporate Finance
+* Data Analysis 
+* Foundations 
+* Macroeconomics 
+* International Finance 
+* Public Finance 
 
 
 2019 Course Website - Macroeconomics
