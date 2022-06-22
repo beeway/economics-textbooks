@@ -4,7 +4,7 @@ The project contains published textbook covers, lecture slides, student projects
 
 
 
-[1] Foundations of Economic Analysis & Explanation, 2020, Cognella, CA
+[1] Foundations of Economic Analysis and Explanation, 2020, Cognella, CA
 
 [2] International Finance Lectures: Global Economy and Monetary System, 2021, Cognella, CA
 
@@ -16,7 +16,8 @@ Textbook Slides: Corporate Finance (2021) and Macroeconomics (2022)
 
 Textbook Slides: International Trade (2019) and International Finance (2021)
 
-Textbook Notes: Data Analysis; Foundations;  Macro; International Finance; Public Finance 
+Textbook Notes: Corporate Finance; Data Analysis; Foundations;  
+Macroeconomics; International Finance; Public Finance 
 
 
 2019 Course Website - Macroeconomics
