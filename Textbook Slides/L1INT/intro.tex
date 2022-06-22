@@ -1,0 +1,1112 @@
+
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{beamer}
+\usepackage{xcolor}
+\usepackage{babel}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{amssymb}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+ % this default might be overridden by plain title style
+ \newcommand\makebeamertitle{\frame{\maketitle}}%
+ \AtBeginDocument{
+   \let\origtableofcontents=\tableofcontents
+   \def\tableofcontents{\@ifnextchar[{\origtableofcontents}{\gobbletableofcontents}}
+   \def\gobbletableofcontents#1{\origtableofcontents}
+ }
+ \long\def\lyxframe#1{\@lyxframe#1\@lyxframestop}%
+ \def\@lyxframe{\@ifnextchar<{\@@lyxframe}{\@@lyxframe<*>}}%
+ \def\@@lyxframe<#1>{\@ifnextchar[{\@@@lyxframe<#1>}{\@@@lyxframe<#1>[]}}
+ \def\@@@lyxframe<#1>[{\@ifnextchar<{\@@@@@lyxframe<#1>[}{\@@@@lyxframe<#1>[<*>][}}
+ \def\@@@@@lyxframe<#1>[#2]{\@ifnextchar[{\@@@@lyxframe<#1>[#2]}{\@@@@lyxframe<#1>[#2][]}}
+ \long\def\@@@@lyxframe<#1>[#2][#3]#4\@lyxframestop#5\lyxframeend{%
+   \frame<#1>[#2][#3]{\frametitle{#4}#5}}
+ \newenvironment{topcolumns}{\begin{columns}[t]}{\end{columns}}
+ \def\lyxframeend{} % In case there is a superfluous frame end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usetheme{Malmoe} %Antibes Bergen Berkeley Berlin Copenhagen Darmstadt Dresden Frankfurt Goettingen Hannover  Ilmenau JuanLesPinsLuebeck Madrid Malmoe Marburg Montpellier PaloAlto Pittsburgh Rochester Singapore Szeged Warsaw boxes default  %options: [compress]
+
+%\usecolortheme{lily} %default bunsen albatross beaver beetle crane dolphin dove fly lily orchid rose seagull seahorse whale wolverine spruce
+
+\setbeamersize{text margin left=6mm,text margin right=6mm} 
+
+\definecolor{purpleh}{rgb}{0.41, 0.21, 0.61}
+\definecolor{lightp}{rgb}{0.69, 0.61, 0.85}
+\definecolor{regalia}{rgb}{0.32, 0.18, 0.5}
+\definecolor{goldw}{rgb}{1.0, 0.84, 0.0}
+
+\setbeamercolor{subsection in head/foot}{bg=regalia, fg=white} % subsection and bottom left
+\setbeamercolor{palette tertiary}{bg=lightp,fg=white} % top and bottom right
+\setbeamercolor{structure}{fg=purpleh} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=purpleh} % TOC sections
+\setbeamercolor{item}{fg=purpleh}
+\setbeamercolor{block title alerted}{fg=white, bg=purpleh}
+
+%\setbeamercolor{palette tertiary}{bg=lightp,fg=white} 
+%\setbeamercolor{palette quaternary}{bg=purpleh,fg=white}
+%\setbeamercolor{palette quaternary}{bg=lightp,fg=white}
+
+% Override palette coloring with secondary
+%\setbeamercolor{subsection in head/foot}{bg=purpleh,fg=white}
+
+
+%\newcommand*\citem{\item[\color{cyan}\scalebox{1}{\textbullet}]}
+%https://tex.stackexchange.com/questions/14319/beamer-change-individual-bullet-color-in-itemize-list/14366
+% cyan violet purple
+%\setbeamercolor{item}{fg=cyan}
+%https://en.wikibooks.org/wiki/LaTeX/Presentations
+
+\useoutertheme{miniframes}
+%infloines miniframes shadow sidebar smoothbars smoothtree split tree
+
+\useinnertheme{circles}
+% circles rectangles inmargin rounded
+
+%FONT \tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \Huge
+%\setbeamertemplate{headline}
+%\setbeamertemplate{footline}[frame number]
+%\setbeamercovered{transparent}
+%\setbeamerfont{footline}{series=\bfseries}
+
+%\makeatother
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+
+\beamertemplatenavigationsymbolsempty
+
+% From Data and Theory to Applications
+
+\begin{document}
+\title[\bf \color{regalia}ECON 211 Macroeconomics]{\bf \Large Macroeconomics in One Equation\\ \Large Lecture 1: Introduction and Overview}
+%\subtitle{\large } 
+\author[\bf Houghton College $\cdot$ Spring 2022 \hspace{7.75cm} ECON 211] 
+{\color{purpleh} \small Biwei Chen \\ \vspace{0.5em} \scriptsize \color{purpleh} For His Glory and Mission}
+%\and Mark E. Wohar\inst{2} 
+
+\institute[]{\inst{}\color{purpleh} \bf \footnotesize Business \& Economics\\ \bf \normalsize Houghton College}
+%\and \inst{2}University of Nebraska at Omaha\\Professor of Economics
+% biwei.chen@houghton.edu
+
+\date[]{}
+\makebeamertitle
+
+%\pgfdeclareimage[height=0.5cm]{institution-logo}{institution-logo-filename}
+%\logo{\pgfuseimage{institution-logo}}
+
+\AtBeginSection[]{ \frame<beamer>
+   { \frametitle{Outline}
+    \tableofcontents[currentsection,currentsubsection]} }
+%\beamerdefaultoverlayspecification{<+->}
+\lyxframeend{}
+
+%=============================================================
+%\tableofcontents{} %\lyxframe{Outline} \tableofcontents{} \lyxframeend{}
+
+\lyxframe{Macroeconomics Parable: The Blind Men and the Elephant} 
+\includegraphics[height=2.53in]{f2/bme}\\ 
+\tiny The parable of the blind men and the elephant is used to illustrate how inaccurate perception can be, how biases can blind us, and how the entire truth of something might be misunderstood despite accurate observation. This parable is often used as a cautionary tale against the adoption or promotion of "absolute truths."\\
+\url{http://www.wisehypnosis.com/articles/stories-parables/the-blind-men-and-the-elephant-parable/}
+\lyxframeend{}
+
+\section{Introduction} \subsection{}
+\lyxframe{Macroeconomics: Basic Questions} %\framesubtitle{C}
+\begin{enumerate}
+\item What is Macroeconomics?
+ \begin{itemize}
+\item Macroeconomics studies overall conditions of the economy.
+\item The most essential sets of macroeconomic variables are national income, employment, price level, money and interest rate.
+\end{itemize}
+\item Why study Macroeconomics?
+ \begin{itemize}
+\item To better understand how the economy functions 
+\item To inform business/financial/policy decisions
+\end{itemize}
+\item How to study Macroeconomics?
+ \begin{itemize}
+\item Learn basic concepts and develop intuition
+\item Master the tools and acquire quantitative skills
+\item Follow and analyze the business/market/policy news
+\item Connect the dots: engage in practice and applications
+\end{itemize}
+\item Learning Economics intuitively, graphically, and quantitatively.
+\item Learning philosophy: core values, vital skills, and critical thinking.
+ \end{enumerate}
+\lyxframeend{}
+
+\lyxframe{Learning Pyramid: Progress to Application and Analysis}
+\begin{center} \includegraphics[height=2.4in]{f1/bloom}\\ \vspace{-0.2em}
+{\tiny \url{https://diversifyingecon.org/active-learning}}
+\end{center}
+\lyxframeend{}
+
+\lyxframe{Macroeconomics in the News and Media}
+\small \begin{itemize}
+\item CNBC | Economy \url{https://www.cnbc.com/economy/}
+\item WSJ | Economy \url{www.wsj.com/news/economy}\\
+\url{https://www.wsj.com/video/browse/business/economy}
+\item NPR | Planet Money \url{https://www.npr.org/sections/money/}
+\item NY Times | Economy \url{https://www.nytimes.com/section/business/economy}
+\item Bloomberg | Economics \url{https://www.bloomberg.com/markets/economics}
+\item Reuters | Macromatters \url{https://www.reuters.com/markets/macromatters/}
+\item The Economist | Finance \& Economics \url{https://www.economist.com/finance-and-economics}
+\item Financial Times | US Economy \url{https://www.ft.com/us-economy}
+\end{itemize}
+\lyxframeend{}
+
+\lyxframe{Macroeconomics: Nature and Scope}
+\begin{enumerate}
+\item Economics is the study of choice under scarcity. It can be classified into Microeconomics, Macroeconomics, and Finance. 
+\item Microeconomics analyzes how individuals (consumers, producers, and governments) make decisions in the society. 
+\item Macroeconomics studies how the aggregate economy functions.
+\item In nature, Economics is a decision-making social science.
+  \begin{itemize} \item Science is human being's inquiry into understanding the universe. \item Economists, like scientists, follow and apply scientific methodology. \item The economy and society is the natural laboratory for economists.\end{itemize}
+\item Macroeconomics subfields
+ \begin{itemize} \item Money and Banking \item Monetary Economics \item International Macro Finance 
+   \item Public Economics \& Finance  \item Applied Macro Econometrics \end{itemize}
+\end{enumerate}
+\lyxframeend{}
+
+\lyxframe{Microeconomics vs Macroeconomics}
+\begin{center} \includegraphics[height=2.4in]{f1/diffmm}\\ 
+\tiny \url{https://www.cheggindia.com/career-guidance/difference-between-microeconomics-and-macroeconomics/}
+\end{center}
+\lyxframeend{}
+
+\lyxframe{Vital Concepts in Microeconomics}
+\begin{alertblock}{Opportunity Cost} The opportunity cost of an action is the highest-valued option necessarily forgone. It is forward-looking. Historical cost is not a cost.\end{alertblock}
+\begin{alertblock}{The Law of Demand} When price goes up, quantity demanded goes down, ceteris paribus.\end{alertblock}
+\begin{alertblock}{The Coase Theorem} The delineation of rights is an essential prelude to market transactions.\end{alertblock}
+\begin{alertblock}{Equity and Efficiency} Pareto optimality is the condition under which no one in the society can be made better off unless someone else is getting worse off.\end{alertblock}
+\lyxframeend{}
+% Collect all Fed websites in L9 Monetary Policy
+
+\lyxframe{Macroeconomics in One Equation: MV=PY}
+\begin{columns}
+\begin{column}{0.4\textwidth}  
+\[\boxed{\bf MV=PY} \]
+\[\boxed{Y=F(K, L)} \] 
+\[\boxed{AD=Y^*=AS} \]
+\[\boxed{Y=C+I+G+NX} \]
+\[\boxed{\pi=\frac{_{\Delta}P}{P}\approx \frac{_{\Delta}M}{M}-\frac{_{\Delta}Y}{Y} }\]
+%\[\boxed{(Y-C-T)+(T-G)=I+NX} \]\\ 
+\[\boxed{M_D=M_D(P, Y, i)=\overline{M_S}} \]
+\[\boxed{\bf i\approx r+\pi^e} \] \\
+\end{column}
+\begin{column}{0.6\textwidth} \begin{enumerate}
+\item Income and Wealth
+\item Labor Market Condition
+\item Price Level and Inflation
+\item Money and Interest Rate
+\item Development and Growth
+\item Business Cycle Fluctuation
+\item Inflation and Unemployment
+\item Consumption and Investment
+\item Government Budget and Fiscal Policy
+\item Central Banking and Monetary Policy
+\item Global Economy, Trade, and Finance
+\end{enumerate} \end{column}
+\end{columns}
+\lyxframeend{}
+% In a world without money, all values can only be measured in certain units of quantity or degrees of quality. However,
+
+\lyxframe{Macroeconomists: Skill Sets}
+\small \begin{columns}
+\begin{column}{0.5\textwidth}
+What do macroeconomists do?
+  \begin{enumerate}
+\item Modeling and forecasting\\ (business and finance industry)
+\item Policy analysis and evaluation\\ (government and public sector)
+\item Empirical and theoretical research 
+\item Business and legal consulting
+\item Education and training
+\end{enumerate} \end{column}
+\begin{column}{0.5\textwidth}
+Essential skills required
+\begin{enumerate}
+\item Research and optimization
+\item Statistical data analysis
+\item Mathematical modeling
+\item Writing and presenting
+\item Communication skills
+\item Systematic thinking
+\end{enumerate} \end{column}
+\end{columns} 
+\vspace{1em}
+AEA: What careers follow after an economics degree?\\
+{\footnotesize \url{https://www.aeaweb.org/resources/students/careers}}\\ \vspace{0.5em}
+Articles: Top jobs and skills for Economic and Finance Majors \\
+\scriptsize \url{https://www.thebalancecareers.com/top-jobs-for-economics-majors-2059650}
+\url{https://www.thebalancecareers.com/top-jobs-for-finance-majors-2064048}
+\lyxframeend{}
+
+\lyxframe{Resources: Books and Courses} \small
+Online eBooks (downloadable)
+\begin{itemize}
+\item CORE-ECON {\tiny \url{https://www.core-econ.org/ebooks/}}
+\item OpenStax: Principles of Macroeconomics 2e.\\ {\tiny \url{https://openstax.org/details/books/principles-macroeconomics-2e}}
+\item Rittenberg and Tregarthen (2012) Macroeconomics Principles 2e.\\{\tiny \url{https://2012books.lardbucket.org/books/macroeconomics-principles-v2.0/}}
+\end{itemize}
+Online Courses and Videos
+\begin{itemize}
+\item MRU - Principles of Macroeconomics\\ {\tiny \url{https://mru.org/principles-economics-macroeconomics-0}}
+\item Khan Academy - Macroeconomics\\ 
+{\tiny \url{https://www.khanacademy.org/economics-finance-domain/macroeconomics}}
+\item Federal Reserve Bank of St. Louis- Economic Lowdown Video\\
+{\tiny \url{https://www.stlouisfed.org/education/economic-lowdown-video-series}}
+\item Learn Liberty Video \tiny \url{https://www.learnliberty.org/videos}
+\end{itemize}
+\lyxframeend{}
+
+\lyxframe{Resources: Encyclopedia and Articles} \small 
+\begin{itemize}
+\item Econlib Encyclopedia {\tiny \url{https://www.econlib.org/cee/}}
+\item IMF Understanding Economics - Back to Basics\\ {\tiny \url{https://www.imf.org/external/pubs/ft/fandd/basics/index.htm}}
+\item Brookings Institute - Key Concepts in Macroeconomics\\ {\tiny \url{https://www.brookings.edu/series/the-hutchins-center-explains/}}
+\item Brookings on the U.S. Economy {\tiny \url{https://www.brookings.edu/topic/u-s-economy/}}
+\item Federal Reserve Bank of St. Louis on the Economy\\ {\tiny \url{https://www.stlouisfed.org/on-the-economy}}
+\item Federal Reserve Bank of St. Louis - Page One Economics {\tiny \url{https://research.stlouisfed.org/publications/page1-econ}}
+\item Project Syndicate Economics \& Finance Columns\\ 
+{\tiny \url{https://www.project-syndicate.org/section/economics}}
+\item Nobel Prizes in Economic Sciences (1969-present)\\
+{\tiny \url{https://www.nobelprize.org/prizes/lists/all-prizes-in-economic-sciences/}}\\
+\end{itemize}
+\lyxframeend{}
+% Federal Reserve Bank of St. Louis - Economic Synopses {\tiny \url{https://research.stlouisfed.org/publications/economic-synopses/}}
+
+\lyxframe{Resources for Economists} \small
+Economics \& Policy Research 
+\begin{itemize}
+\item American Economic Association {\tiny \url{https://www.aeaweb.org}}
+\item National Bureau of Economic Research {\tiny \url{https://www.nber.org}}
+\item Peterson Institute for International Economics {\tiny \url{https://www.piie.com}}
+\item IDEAS -- bibliographic database in Economics \tiny \url{https://ideas.repec.org}
+\end{itemize}
+Economists Job Markets
+\begin{itemize}
+\item EconJobMarket {\tiny \url{https://econjobmarket.org}}
+\item AEA job market {\tiny \url{https://www.aeaweb.org/joe/listings}} 
+\end{itemize}
+International Governance Organizations
+\begin{itemize}
+\item World Bank {\tiny \url{https://www.worldbank.org}}
+\item World Trade Organization {\tiny \url{https://www.wto.org}}
+\item International Monetary Fund {\tiny \url{https://www.imf.org}}
+\item Organisation for Economic Co-operation \& Development {\tiny \url{https://www.oecd.org}}
+\end{itemize}
+\lyxframeend{}
+
+%World Bank
+%World Trade Organization
+%International Monetary Fund 
+%Organization for Economic Cooperation and Development 
+%https://research.stlouisfed.org/publications/page1-econ/2021
+%https://www.stlouisfed.org/education/economic-lowdown-video-series
+
+%===========================================================================
+\section{The US Economy} \subsection{}
+
+\lyxframe{FOMC Press Conference \href{https://www.federalreserve.gov/videos.htm} {\tiny (w)} }
+\begin{columns}[t]
+   \column{.5\textwidth} 
+     \includegraphics[height=1.5in]{f2/fomc1}\\
+   \column{.5\textwidth} \\  \vspace{-3.5em}
+     \includegraphics[height=1.4in]{f2/fomc2}\\
+\end{columns} \vspace{1em}
+{\tiny \url{https://www.federalreserve.gov/monetarypolicy/fomcpresconf20211215.htm}}
+\lyxframeend{}
+
+\lyxframe{FOMC Economic Projects \href{https://www.federalreserve.gov/videos.htm} {\tiny (w)} }
+\begin{columns}[t]
+   \column{.5\textwidth}
+       \includegraphics[height=1.4in]{f2/fo1}\\ \vspace{0.3em}
+       \includegraphics[height=1.4in]{f2/fo3}\\
+   \column{.5\textwidth}
+     \includegraphics[height=1.4in]{f2/fo2}\\ \vspace{0.3em}
+      \includegraphics[height=1.4in]{f2/fo4}\\
+\end{columns} 
+\lyxframeend{}
+
+\lyxframe{FOMC Economic Projections \href{https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm} {\tiny(w)}}
+\includegraphics[height=2.75in]{f2/fomc3}\\  
+\tiny \url{https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm}
+\lyxframeend{}
+
+\lyxframe{FOMC Economic Projections: 2021-24}
+\begin{columns}[t]
+   \column{.5\textwidth}
+       \includegraphics[height=2.5in]{f2/f1}\\
+   \column{.5\textwidth}
+     \includegraphics[height=2.4in]{f2/f2}\\
+\end{columns} \vspace{0.5em}
+{\tiny \url{https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm}}
+\lyxframeend{}
+
+\lyxframe{The Conference Board Economic Outlook \href{https://www.conference-board.org/research/us-forecast} {\tiny(w)} }
+\includegraphics[height=2.3in]{f2/cbf}\\ {\tiny Note: Percentage Change, Seasonally Adjusted Annual Rates.\\
+\url{https://www.conference-board.org/research/us-forecast}}
+\lyxframeend{}
+
+\lyxframe{Bureau of Economic Analysis: Economy at a Glance \href{https://www.bea.gov/news/glance
+} {\tiny(w)} }
+\includegraphics[height=2.75in]{f2/bea}\\ 
+\tiny \url{https://www.bea.gov/news/glance}
+\lyxframeend{}
+
+\lyxframe{Bureau of Labor Statistics: Economy at a Glance \href{https://www.bls.gov/eag/eag.us.htm}{\tiny(w)}}
+\includegraphics[height=2.75in]{f2/bls}\\ 
+\tiny \url{https://www.bls.gov/eag/eag.us.htm}
+\lyxframeend{}
+
+\lyxframe{Census Bureau: Economic Indicators \href{https://www.census.gov/economic-indicators/}{\tiny(w)} }
+\includegraphics[height=2.7in]{f2/eicb}\\ {\tiny \url{https://www.census.gov/economic-indicators/}}
+\lyxframeend{}
+
+\lyxframe{Federal Government: Fiscal Data \href{https://fiscaldata.treasury.gov/}{\tiny(w)} }
+\includegraphics[height=2.7in]{f2/gfd}\\ 
+\tiny \url{https://fiscaldata.treasury.gov/}
+\lyxframeend{}
+
+\lyxframe{USA Facts Economic Indicators \href{https://usafacts.org/data/topics/economy/economic-indicators/} {\tiny(w)} }
+\includegraphics[height=2.7in]{f2/ei}\\ {\tiny \url{https://usafacts.org/data/topics/economy/economic-indicators/}}
+\lyxframeend{}
+
+\lyxframe{COVID-19 Impact and Recovery \href{https://usafacts.org/covid-recovery-hub/} {\tiny(w)} }
+\includegraphics[height=2.8in]{f2/covid}\\ \vspace{-0.5em} {\tiny \url{https://usafacts.org/covid-recovery-hub/}}
+\lyxframeend{}
+
+\lyxframe{U.S. Official Economic Indicators}
+\begin{columns}
+\begin{column}{0.55\textwidth}
+    \includegraphics[height=2.7in]{f2/eius}\\
+\end{column}
+\begin{column}{0.45\textwidth}
+{\scriptsize Available from April 1995 forward, this monthly publication is prepared by the U.S. Council of Economic Advisers for the Joint Economic Committee. It provides economic information on gross domestic product, income, employment, production, business activity, prices, money, credit, security markets, Federal finance, and international statistics. Economic Indicators back to 1948 are made available through the Federal Reserve Archival System for Economic Research. FRASER is provided through a partnership between GPO and the Federal Reserve Bank of St. Louis.}\\ \vspace{-0.2em} {\tiny \url{https://www.govinfo.gov/app/collection/ECONI}}
+\end{column}
+\end{columns}
+\lyxframeend{}
+% \href{https://www.govinfo.gov/app/collection/ECONI}{\tiny (w)}
+
+\lyxframe{Federal Reserve Banks: U.S. Economy} % \href{} {\small(w)}}
+\scriptsize U.S. Economic Conditions Reports
+\begin{itemize}
+\item \url{https://www.dallasfed.org/research/US}\\
+\item \url{https://www.newyorkfed.org/research/snapshot}\\
+\item \url{https://www.frbsf.org/economic-research/publications/fedviews}\\
+\item \url{https://www.bostonfed.org/publications/presidents-reports.aspx}\\
+\item \url{https://www.kansascityfed.org/data-and-trends/economic-conditions}\\
+\end{itemize}
+U.S. Economy Data and Indicators
+\begin{itemize}
+\item \url{https://www.federalreserve.gov/data.htm}
+\item \url{https://nationaleconomicsummary.bostonfed.org}
+\item \url{https://stlouisfed.shinyapps.io/macro-snapshot}
+\item \url{https://www.chicagofed.org/research/data/index}
+\item \url{https://www.philadelphiafed.org/surveys-and-data}
+\item \url{https://www.newyorkfed.org/research/data_indicators}
+\item \url{https://www.dallasfed.org/Home/research/econdata.aspx}
+\item \url{https://www.atlantafed.org/research/data-and-tools.aspx}
+\item \url{https://www.frbsf.org/economic-research/indicators-data}
+\item \url{https://www.clevelandfed.org/our-research/indicators-and-data.aspx}
+\end{itemize}
+\lyxframeend{}
+
+\lyxframe{FRBSF Macroeconomics Data Post}
+Topics related to aggregate economic measures, the role of the U.S. government and its policies, financial markets, and monetary policy.\\ {\small \color{purpleh} \url{https://www.frbsf.org/education/teacher-resources/datapost/}}
+\begin{itemize}
+\item Gross Domestic Product: Measuring the Nation's Output
+\item Inflation: Measuring Price Changes
+\item Unemployment Rate: Measuring the Workforce
+\item Labor Force Participation Rates: Measuring Workforce Engagement
+\item Government Spending: Measuring Federal Expenditures
+\item Personal Saving Rate: Delayed Consumption
+\item The Money Supply: Measuring M1 \& M2
+\item International Trade Patterns: U.S. Imports
+\end{itemize}
+\lyxframeend{}
+
+%===========================================================================
+\section{Quantity Equation} \subsection{} \small
+
+\lyxframe{Macroeconomics in One Equation: MV=PY} \framesubtitle{}
+The Quantity Theory of Money (QTM) is an economic theory relating the price of the goods and services to the quantity of money in circulation for them. It provides a monetary perspective of economic transactions.
+\begin{enumerate}
+\item M -- money quantity: How many dollars in the economy are available to exchange for the goods and services? 
+\item V -- transaction velocity: How many transactions occur in each period? Payment technology can affect transaction frequency.
+\item P -- the price of the goods and services in exchange.
+\item Y -- the quantity of the goods and services in exchange.
+\end{enumerate}
+QTM applies to any single transaction as well as all economic transactions.Throughout our study of Macroeconomics, this equation helps us connect the dots of all chapters.
+\lyxframeend{}
+% Mathematically, the quantity theory of money can be shown in an equation MV=PY. In money market equilibrium, demand for money equals supply of money. 
+
+\lyxframe{QTM: Origin and Evolution} \framesubtitle{}
+The theory was originally formulated by Polish mathematician Nicolaus Copernicus in 1517, and was influentially restated by philosophers John Locke, David Hume, Jean Bodin. The theory experienced a large surge in popularity with economists Anna Schwartz and Milton Friedman's book A Monetary History of the United States, published in 1963 (Source: Wikipedia).
+\begin{itemize}
+\item As developed by the English philosopher John Locke in the 17th century, the Scottish philosopher David Hume in the 18th century, and others, it was a weapon against the mercantilists, who were thought to equate wealth with money. 
+\item If the accumulation of money by a nation merely raised prices, argued the quantity theorists, then a "favourable" balance of trade, as desired by mercantilists, would increase the supply of money but not wealth. 
+\item In the 19th century the quantity theory contributed to the ascendancy of free trade over protectionism. In the 19th and 20th centuries it played a part in the analysis of business cycles and in the theory of foreign exchange rates. 
+\hfill \tiny \url{https://www.britannica.com/topic/quantity-theory-of-money} 
+\end{itemize}
+\lyxframeend{}
+
+\lyxframe{QTM: Intuition and Examples} \framesubtitle{}
+\begin{itemize}
+\item The quantity theory of money states that the quantity of money in circulation bears a direct, proportional relationship to the price of the goods and services in transactions.
+\item Consider a simple example: an economy produce only one good and use one dollar to measure its value. What should be the price of the good?
+\item All else equal, what should be the price of the good if a hundred dollar were used? And the unit price were two identical goods produced?
+\item In principle, QTM sets an exchange equation. The equation works well to explain the price of the goods and services. It also helps to understand the exchange rate between two currencies. 
+\item Suppose an apple costs one dollar in the US but a hundred yen in Japan, then the exchange rate should be one dollar for a hundred yen.
+\item In Macroeconomics, we apply this equation to the analysis of the overall economy, but in a reverse order.
+\end{itemize}
+\lyxframeend{}
+
+\lyxframe{QTM: The Output Y} \framesubtitle{}
+\begin{itemize}
+\item In MV=PY, the total amount of goods, services, and assets available for exchange in the economy is Y.
+\item How do economists measure the aggregate output in an economy? 
+\item National income or aggregate output is the total amount of goods and services produced in an economy. The most common measure of the size of an economy is GDP (gross domestic product). 
+\item The (percentage) change of national income over time can measure economic growth. The fluctuation of aggregate output in a shorter horizon constitutes business cycles.
+\item From the expenditure (demand) side of the economy, national income can be decomposed into consumption, investment, government spending, and net export. From the production (supply) side of the economy, national income is derived from input factors, including labor market conditions, capital formation and utilization, and production technology.
+\end{itemize}
+\lyxframeend{}
+
+\lyxframe{QTM: The Price Level P} \framesubtitle{}
+\begin{itemize}
+\item In MV=PY, the overall price level is P. The price level in the economy determines people's living costs and compensations.
+\item How do economists measure the price level and the living costs? 
+\item The technique is to construct a price index. Economists choose a fixed basket of goods and services representing the economy, measuring its market value over time with the base year indexed as 100.
+\item Popular measurements: Consumer Price Index (CPI) and core CPI (excluding food and energy), Personal Expenditure (PCE) and core PCE, and Producer Price Index (PPI).
+\item If an economy experiences increasing price level, goods and services are becoming more expensive, though the real quantity does not increase. The overall rise in the price level is called inflation. The percentage change of the price level is a measure of inflation. 
+\item More essentially, what cause(s) rising price levels? What are the effects? What are the policy implications and measures to keep the price stable?%if that is "good" for the economy
+\end{itemize}
+\lyxframeend{}
+
+\lyxframe{QTM: Money M and Velocity V} \framesubtitle{}
+\begin{itemize}
+\item In MV=PY, the quantity of money in circulation for market change is M. What is money? Why do we need money? What are the functions of money? Where are the money coming from? And how do economists measure the quantity of money in the economy? 
+\item The velocity of money V is a measure of the number of times that the average unit of currency is used to purchase goods and services within a given time period. The concept relates the size of economic activity to a given money stock, and the speed of money exchange is one of the variables that determine price levels. 
+\item The measure of V is usually the ratio of the national income to its money stock. If V is increasing, then transactions are occurring more frequently. The velocity of money changes over time and is influenced by a variety of factors. {\tiny \url{https://en.wikipedia.org/wiki/Velocity_of_money}}
+\item Finally, what is monetary policy? Who are responsible for conducting monetary policy? What are the effects and outcomes of various monetary policy? How do economists evaluate and inform monetary policy?
+\end{itemize}
+\lyxframeend{}
+
+\lyxframe{QTM Measurements: Output and Money}
+\includegraphics[height=2.3in]{f1/pyms} \\ 
+\lyxframeend{}
+
+\lyxframe{QTM Measurements: Velocity of Money}
+\includegraphics[height=2.3in]{f1/mvs} \\ 
+\lyxframeend{}
+
+\lyxframe{MV=PY: Aggregate Causes and Effects}
+In the quantity equation, holding some variables constant enables us, in turn, to explain the change in other variables.
+\begin{itemize}
+\item V, Y constant, M+ $\Rightarrow$ P+; M-- $\Rightarrow$ P--.
+\item M, V constant, Y+ $\Rightarrow$ P--; Y-- $\Rightarrow$ P+.
+\item M, Y constant, V+ $\Rightarrow$ P+; V-- $\Rightarrow$ P--.
+\item In the short run, macroeconomists assume price rigidity (not flexible); in the long run, price level is fully adjustable. Hence, P is determined.
+\item In QTM, what are the causes of inflation in the long run?
+\item Money neutrality assumed, P is determined by changes in M, V and Y, but not vice versa. In reality, P can affect others.
+\item Deep question: what determine the change in M,V and Y?
+\item The AD-AS model can explain the effects of M on P and Y, in the short run, the median run, and the long run.
+\end{itemize}
+\lyxframeend{}
+
+\lyxframe{Macroeconomics: A Set of Four Measurements}
+Macroeconomics consists of two pairs of measurement variables. Being able to differentiate them is crucial for performing economic and financial analysis. 
+\begin{enumerate}
+\item Flow variable is a value measured in a given period of time.
+\item Stock variable is a value measured at an instant of time.
+\item Nominal variable is a value measured in monetary units/prices.
+\item Real variable is a value measured in terms of quantity and quality.
+\end{enumerate}
+The difference between the flow and stock variables arises from the notion of time. Flow variables are measured in a time interval, whereas stock variables are measured at a specific point in time.\\  \vspace{0.6em}
+The distinction between the nominal and real variables is a result of the introduction of money. In our monetary world, economic values are measured and standardized in monetary units by convention or by law.
+\lyxframeend{}
+
+\lyxframe{Flow v.s. Stock Variables}
+In economics and finance, flow and stock variables keep track of economic values over time in perspective. The accumulation of the flow variable, netting out its "leakages," becomes the stock value. This relationship is applied in almost all economic and financial measurements.
+\begin{enumerate}
+\item Income and Wealth
+\item Investment and Capital
+\item Government Deficit and Debt
+\item International Trade Deficit and Debt
+\item Income statement vs Balance sheet (Accounting)
+\item Balance of payment vs Net Wealth Position (International Finance)
+\end{enumerate}
+Suppose there is a time line recording flow values at the end of each period, by the end of any given period, the stock value would equal the sum of all previous flow values recorded. In Probability and Statistics, these two concepts correspond to probability $P(X=x_i)$ and cumulative probability $P(X\leq x_i)$.
+\lyxframeend{}
+
+\lyxframe{Nominal v.s. Real Variables}
+In economics, nominal value is expressed in monetary terms (in units of a currency). By contrast, real value adjusts nominal value to remove the effects of price level change in the economy. More fundamentally, a real variable is measured in terms of the quantity of goods and services. The five most pivotal real variables in macroeconomics and finance are:
+\begin{enumerate}
+\item Real income (NI/P): goods and services produced in a period.
+\item Real wage (W/P): the amount of goods and services that the monetary or nominal wage can afford.
+\item Real money balance (M/P): the purchasing power of money in terms of the amount of goods and services.
+\item Real exchange rate ($RE=E*P_F/P_H$): the amount of domestic goods and services that a foreign currency can purchase.
+\item Real interest rate ($r=i-\pi$): the rate of return for goods and services, which equals nominal interest rate minus inflation rate.
+\end{enumerate}
+\lyxframeend{}
+
+\lyxframe{QTM: Market Equilibrium View} 
+\begin{itemize}
+\item Like any other identifies, the quantity equation of money is always true. 
+\item But it is a powerful tautology. The left hand side of the equation is total monetary value recorded in transactions. The right hand side is the total market value of goods and services in exchange.
+\item Most economists consider M as money supply determined by the monetary policy. That's not correct.
+\item Recall that the demand and supply model characterizes market equilibrium. Neither demand nor supply can determine an equilibrium. It takes both to settle its value.
+\item Money demand and money supply are determined by (functions of) other variables. An equilibrium view requires economists to study them separately and solve them jointly.
+\item In sum, M is the quantity of money in circulation in the economy for market exchange. It is not equivalent to money supply but is an equilibrium quantity where demand and supply intersect, in theory.  
+\end{itemize}
+\lyxframeend{}
+
+\lyxframe{QTM: General Equilibrium View}
+\begin{itemize}
+\item In Microeconomics (price theory), the demand and supply model is the only equilibrium model that can be applied to all types of markets: goods market, labor market, real estate market, and financial markets.
+\item It is important to note that there is a distinction between the money market and the capital market in Finance (Interest Theory). 
+\item Money market applies to short term financial borrowing and lending activities within a year, whereas capital market refers to long term loanable funding transactions greater than one year. 
+\item Money demand and supply determines market interest rates in equlibrium.
+\item In Macroeconomics (money theory), the output market and money market constitute the closed-economy general equilibrium. The Keynesian IS-LM model is derived from the simultaneous equilibrium in the two markets.
+\item In International Finance and Macroeconomics, via the foreign exchange market, the general equilibrium in an open economy consists of simultaneous convergence among all three markets.
+\end{itemize}
+\lyxframeend{}
+
+%==============================================
+\section{Scientific Methods} \subsection{} \small 
+
+\lyxframe{The Nature of Economics}
+\begin{itemize}
+\item Economics is a decision-making social science.
+\item Science is human intellectual inquiry into understanding the universe. 
+\item Science can help discover underlying patterns, explain causes and effects, enlighten and change the world.
+\item Scientists follow principles and standards guided by scientific methods. Hence, people trust science because of its reliability and validity. 
+\item The scientific method requires scientists to derive abstract theory based on certain assumptions to help explain how a complex real world operates. 
+\item More importantly, scientists subject theories and models to empirical tests. Therefore, scientists can develop, reject, refine theories, and apply them in practice. 
+\item Akin to other sciences, Economics consists of explanations (theories and models) that help us understand and make valid predictions about the real world, together with the empirical evidence for and against them.
+\end{itemize}      
+\lyxframeend{}
+
+\lyxframe{Scientific Method and Procedure}
+\begin{columns}
+\begin{column}{0.55\textwidth}
+       \includegraphics[height=2in]{f4/sm}\\ \vspace{1em}
+       {\tiny \url{https://en.wikipedia.org/wiki/Scientific_method}}
+\end{column}
+\begin{column}{0.45\textwidth}
+The scientific method involves careful observation, applying rigorous skepticism about what is observed, given that cognitive assumptions can distort how one interprets the observation.\\ \vspace{1em}
+It involves 1) formulating hypotheses, via induction, based on such observations; 2) experimental and measurement-based testing of deductions drawn from the hypotheses; and 3) refinement (or elimination) of the hypotheses based on the experimental findings.
+\end{column}
+\end{columns}  
+\lyxframeend{}
+
+\lyxframe{Scientific Principles and Procedures}
+\textit{"Science is the great antidote to the poison of enthusiasm and superstition."}\\
+\begin{columns}
+\begin{column}{0.5\textwidth}
+  \begin{enumerate}
+\item Science distinguishes a law or theory from facts.
+\item The universe has its own objective laws (not random). 
+\item Data/facts cannot be self-explanatory (not ad hoc). 
+\item It requires abstract theory to explain (not tautology).
+\item A valid theory stands examinations and tests.
+\end{enumerate} \end{column}
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\item Start from the real life observation and data, trying to explain    
+\item State the postulate, make assumptions, and develop a theory 
+\item Derive testable or refutable implications from the model
+\item Collect and process data, design experiment to test the theory
+\item Reject or accept; improve and apply the theory in practice
+\end{enumerate} \end{column}
+\end{columns}
+\lyxframeend{}
+
+\lyxframe{Macroeconomic Research: Components}
+\begin{enumerate}
+\item The goal is to make general statements about how the economy works.
+\item Macroeconomic theory: a set of ideas about the economy, based on assumptions and organized in a logical framework 
+\item Macroeconomic model: a simplified description and explanation of some aspect of the economy 
+\item Empirical test: a statistical procedure to examine how consistent and robust is the model to explain the data
+\item Theoretical and empirical research are necessary for economic analysis, forecasting, and policy evaluation.
+\end{enumerate}      
+Usefulness of economic theory or models depends on reasonableness of assumptions, possibility of being applied to real problems, empirically testable implications, and theoretical results consistent with real-world data
+\lyxframeend{}
+
+\lyxframe{Macroeconomic Research: Procedures}
+Data and Research: Developing and Testing an Economic Theory
+\begin{enumerate}
+\item Examine the data, analyze the patterns, and "tell your story"
+\item State the research question. Why is it interesting and important?
+\item Make provisional assumptions that describe the economic setting and the behavior of the economic actors.
+\item Work out the implications of the theory. Following the logic of its assumptions and model solution, what would happen to Y if X changes?
+\item Conduct an empirical analysis to compare the implications of the theory with the data.
+\item Evaluate the results of your comparisons. If the theory fits the data well, use the theory to predict what would happen if the economic setting or policies change.
+\end{enumerate}      
+\tiny \hfill Source: Adapted from Abel, Bernanke, and Croushore (2020) Macroeconomics, 10e, Pearson.
+\lyxframeend{}
+
+\lyxframe{Economic Data and Measurements}
+\textit{"Data is a valuable asset and can be the world's most valuable resource."}
+\begin{itemize}
+\item Data (facts/observations/phenomena/statistics) are information collected for reference or analysis (for decision-making purposes).
+\item As a collection of measurements or observations, data can be divided into two different types: qualitative and quantitative. 
+\item Quantitative, or numerical, data can be broken down into two types: discrete and continuous. 
+\item Qualitative data describes the qualities of data points and is non-numerical. It's used to define the information and can also be further broken down into sub-categories through the four scales of measurement.
+\item Scales of measurement is how variables are defined and categorized. Psychologist Stanley Stevens developed the four common scales of measurement: nominal, ordinal, interval and ratio. 
+\end{itemize}      
+\tiny \hfill \url{https://studyonline.unsw.edu.au/blog/types-of-data}
+\lyxframeend{}
+
+\lyxframe{}
+\centering \includegraphics[height=3in]{f4/wed}\\ \vspace{-0.5em} 
+{\tiny \url{https://ourworldindata.org/a-history-of-global-living-conditions-in-5-charts}}
+\lyxframeend{}
+
+\lyxframe{Time Series Data in Macroeconomics}
+Most macroeconomic indicators are time series data. In plain English, it is a sequence of data observations collected over time. Four core properties: 
+\begin{enumerate}
+\item The trend. In any time series, the trend is the slow change in the series over a long period. 
+\item The cycle. In most economic forecasting, the growth rate of a variable is of economists' interest. Growth rates can be calculated from the percentage change in the value of the series from one period to another.
+\item Seasonality. There are cyclical patterns that repeat over units of time (e.g., daily, weekly, monthly). Remove seaonal variation before release.
+\item Random variation. Not every part of a time series can be explained by a trend, cycle, or seasonal pattern. What's left over are just random movements that can't be predicted.
+\end{enumerate}
+For most economic data, macroeconomists care about the trend and the cycle but not the seasonal variation, since that represents patterns that are independent of overall economic health. However, excess volatility poses risk.\\ \vspace{0.2em}
+\tiny \hfill Source: A lesson on time series to get you started with FREDcast. 2019. The FRED Blog.\href{https://fredblog.stlouisfed.org/2019/09/a-lesson-on-time-series-to-get-you-started-with-fredcast/}{(w)}
+\lyxframeend{}
+
+\lyxframe{Macroeconomic Data: Seasonal Pattern}
+	\begin{columns}
+	\begin{column}{0.49\textwidth}
+		\includegraphics[height=1.27in]{f4/sa3}\\
+	\end{column}
+	\begin{column}{0.51\textwidth}
+		\includegraphics[height=1.27in]{f4/sa4}\\
+	\end{column}
+\end{columns} \vspace{0.3em} \scriptsize 
+{\bf Left graph}: the repeating up-and-down monthly pattern of U.S. imports from China contrasts with the comparatively steadier pattern of U.S. imports from Canada: Many Chinese goods arrive at U.S. ports and shipping centers in October, while far fewer do in February and March; Canadian goods, in comparison, arrive in fairly similar numbers throughout the year. The timing of the imports is just ahead of the busiest retail season of the year, the Christmas holiday; that suggests these are consumer goods likely to be purchased as gifts. Perhaps Santa prefers to shop in China rather than Canada.  \href{https://fredblog.stlouisfed.org/2022/01/the-seasonality-of-chinese-imports/}{(w)}\\ \vspace{0.3em} 
+{\bf Right graph}: shows the quarterly dollar prices of a pound of Thompson seedless grapes (green) and a dry pint of strawberries (red). When grapes are harvested at the end of the summer (the third quarter) and strawberries are picked in the spring (the second quarter), the abundant supply pushes down their prices to their annual lows. Notice how strawberry prices remain low---or even fall farther---during the third quarter of the year. \href{https://fredblog.stlouisfed.org/2015/06/dont-be-deceived-by-seasonality/}{(w)} 
+\lyxframeend{}
+
+\lyxframe{Macroeconomic Data: Seasonal Adjustment}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\includegraphics[height=1.32in]{f4/sa1}\\
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\includegraphics[height=1.32in]{f4/sa2}\\
+		\end{column}
+	\end{columns} \vspace{0.3em}
+\footnotesize  {\bf Left graph}: the two series have the same label, yet they tell very different stories: The red line bounces between a few values, and the blue line shows a large increase last summer and then a decrease this winter. The difference is that the blue line reflects raw data, while the red line has been adjusted for seasonal regularities.\\ {\bf Right graph}: expanding the sample period reveals the obvious seasonal variations in the path of the blue line, and the graph below shows this. Note, however, that these seasonal variations are not as strong as they used to be, presumably because the economy has become less sensitive to weather conditions. \\ \tiny 
+\vspace{0.5em}
+\url{https://fredblog.stlouisfed.org/2015/06/dont-be-deceived-by-seasonality/}\\ \vspace{0.5em}
+Seasonality: 
+Food prices \href{https://fredblog.stlouisfed.org/2020/08/seasonality-in-food-prices-a-bountiful-harvest-of-fred-data/}{(w)} \hspace{0.8em}
+E-commerce \href{https://fredblog.stlouisfed.org/2014/09/the-seasonality-of-e-commerce/}{(w)} \hspace{0.8em} 
+Trade imports \href{https://fredblog.stlouisfed.org/2022/01/the-seasonality-of-chinese-imports/}{(w)} \hspace{0.8em}
+Interest rates \href{https://fredblog.stlouisfed.org/2015/03/seasonal-interest-rates/}{(w)}
+\hspace{0.8em} 
+Labor markets \href{https://fredblog.stlouisfed.org/2015/06/dont-be-deceived-by-seasonality/}{(w)}
+\lyxframeend{}
+
+\lyxframe{Economic Theory: Assumptions and Models} \footnotesize
+Economic theory is a systematic collection of the ideas and principles that aim to describe how economies work.
+\begin{itemize}
+\item Economic theory starts with its postulate: a statement assumed to be true without proof. It serves to explain undefined terms, and to serve as a starting point for proving other statements. Postulates are not facts.
+\item Postulate of Economics: Rationality or Self-Interest or Economic Man.
+\item Assumption is a statement that is assumed to be true and from which a conclusion can be drawn. Economists often make simplified and unrealistic assumptions for constructing a model.
+\item Economists use models to simplify reality in order to improve our understanding of the world and help us make predictions and decisions. Models can display in various forms, mostly in mathematical equations or geometric graphs. 
+\end{itemize}      
+\textit{"Microfoundations are an effort to understand macroeconomic phenomena in terms of economic agents' behaviors and their interactions. Research in microfoundations explores the link between macroeconomic and microeconomic principles in order to explore the aggregate relationships in macroeconomic models."}\\
+\tiny \hfill \url{https://en.wikipedia.org/wiki/Microfoundations}
+\lyxframeend{}
+% Macroeconomic theory inherits the same foundation of Microeconomics: rationality in economic agent's decision-making.
+
+\lyxframe{Example: The Economy in Diagram}
+\includegraphics[height=2.3in]{f4/cfd}\\ \vspace{0.3em} 
+\scriptsize To help us visualize the complex economic system, economists simply it in a circular-flow diagram, which includes two economic agents and two different markets. Firms and households exchange their goods and services in the product market and the factor market. To facilitate all these transactions, money is the medium of exchange and unit of account.
+\lyxframeend{}
+
+\lyxframe{Example: Production Possibilities Frontier \href{https://www.thebalance.com/production-possibilities-curve-definition-explanation-examples-4169680}{\tiny (w)}}
+\includegraphics[height=2.3in]{f4/ppf}\\ \vspace{0.3em} 
+\scriptsize A production possibilities frontier (PPF) depicts the maximum output of two goods using a given amount of input, which consists of any combination of production factors such as natural resources, human and social capitals. The PPF is derived from the opportunity cost in production. It can illustrate the concepts of economic efficiency and growth. \lyxframeend{}
+
+\lyxframe{Example: Agent Optimization Models}
+\begin{columns}[t]
+   \column{.5\textwidth}
+       Consumer: Utility Maximization\\ \vspace{0.3em} 
+       \includegraphics[height=1.4in]{f4/um}\\
+   \column{.5\textwidth}
+       Producer: Cost Minimization\\ \vspace{0.32em} 
+     \includegraphics[height=1.45in]{f4/cm}\\
+\end{columns} \vspace{1em}
+\footnotesize During recent decades, macroeconomists have attempted to combine microeconomic models of individual behaviour to derive the relationships between macroeconomic variables. Presently, many macroeconomic models, representing different theories, are derived by aggregating microeconomic models, allowing economists to test them with both macroeconomic and microeconomic data (Wikipedia - Microfoundations).\\ \vspace{0.5em}
+\tiny \url{https://en.wikipedia.org/wiki/Microfoundations}\\ \vspace{0.5em}
+Graphs: Goolsbee, Levitt \& Syverson (2020) Microeconomics, 3e, Worth
+\lyxframeend{}
+
+\lyxframe{Example: Market Equilibrium Model} \vspace{-0.6em}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\includegraphics[height=2in]{f4/dsm}
+\end{column}
+\begin{column}{0.5\textwidth}
+    \begin{itemize}
+     \item Market Equilibrium $E^*(P, Q)$\\ $D: Q_D=a-bP$\\ $S: Q_S=c+dP$\\ $Q_D^*=Q^*(P^*)=Q_S^*$\\
+     \item Market welfare measures the net benefits from mutual exchange (consumer and producer surpluses). \\
+     \item Consumer surplus (CS): reservation value minus price. \\
+     \item Producer surplus (PS):\\ price minus reservation cost.\\
+     \end{itemize}
+\end{column}
+\end{columns} \vspace{0.5em} \scriptsize
+The market equilibrium model is the aggregation of individual demand and supply decisions made by all participating consumers and producers. It can explain the determination of price-quantity in combination and predict changes in market conditions as a result of exgoenous demand or/and supply factors. Market equilibrium is a series of events.\\%However, it can be confusing to understand the cause and effect of price-quantity behaviors. When applying the law of demand, price is the cause, quantity demanded is the effect. When applying the demand and supply model, price and quantity are both the effect, not cause, of ex\\
+\tiny \url{https://pressbooks.bccampus.ca/uvicecon103/chapter/3-6-equilibrium-and-market-surplus/}
+\lyxframeend{}
+
+\lyxframe{Economic Analysis: Positive v.s. Normative}
+\includegraphics[height=2.5in]{f4/pvn}\\ \vspace{0.5em} 
+{\scriptsize Positive statements: descriptive and explanatory (what, when, where, how, and why)\\ Normative statements: subjective and prescriptive (involve moral and value judgement)}
+\lyxframeend{}
+
+\lyxframe{} \footnotesize
+\textit{As I see it, progress in understanding the working of the economic system will come from an interplay between theory and empirical work. The theory suggests what empirical work might be fruitful, 
+the subsequent empirical work suggests what modification in the theory or rethinking is needed, which in turn leads to new empirical work.  If rightly done, scientific research is a never-ending process, but one that leads to greater understanding at each stage.}\\ \hfill {\tiny Source: Ronald Coase (2006) The Conduct of Economics. \href{https://www.coase.org/aboutronaldcoase.htm}{(w)}}\\
+\vspace{1em}
+\textit{I don't only think economics will change, I think it ought to change....We need empirical work which actually changes the way we look at the problem....What is wrong is the failure to look at the system as the object of study....We will never, when we're dealing with the economic system, deal with an easy-to-analyze set of problems....The key to the development of a sensible analysis is the comparison between the additional production resulting from the rearrangement of activities and the cost of the transactions needed to bring the rearrangement about....If you can get extra production by rearranging activities, you will do so if the costs of transactions are less than the value of what is gained....Contracts are, in effect, the neurons of the economic system.}\\
+ \hfill \tiny Source: Ronald Coase (2006) Why Economics Will Change. \href{https://www.coase.org/coaseremarks2002.htm}{(w)}
+\lyxframeend{}
+
+\lyxframe{} \footnotesize
+\textit{Macroeconomics and meteorology are similar in certain ways. First, both fields deal with highly complex general equilibrium systems. Second, both fields have trouble making long-term predictions. For this reason, considering the evolution of meteorology is helpful for understanding the potential upside of our research in macroeconomics. In the olden days, before the advent of modern science, people spent a lot of time praying to the rain gods and doing other crazy things meant to improve the weather. But as our scientific understanding of the weather has improved, people have spent a lot less time praying to the rain gods and a lot more time watching the weather channel.\\
+Policy discussions about macroeconomics today are, unfortunately, highly influenced by ideology. Politicians, policymakers, and even some academics hold strong views about how macroeconomic policy works that are not based on evidence but rather on faith. The only reason why this sorry state of affairs persists is that our evidence regarding the consequences of different macroeconomic policies is still highly imperfect and open to serious criticism. Despite this, we are hopeful regarding the future of our field. We see that solid empirical knowledge about how the economy works at the macroeconomic level is being uncovered at an increasingly rapid rate. Over time, as we amass a better understanding of how the economy works, there will be less and less scope for belief in "rain gods" in macroeconomics and more and more reliance on convincing empirical facts.}\\ \vspace{0.3em}
+\hfill \tiny Source: Nakamura and Steinsson (2018) Identification in Macroeconomics.  \lyxframeend{}
+
+%==============================================
+\section{History and Thought} \subsection{}
+
+\lyxframe{(R)Evolution of Economic Thought}
+{\small \begin{enumerate}
+\item Classical Political Economy
+ \begin{itemize} \item Adam Smith (1776) An Inquiry into the Nature and Causes of the Wealth of Nations \item David Ricardo (1817) Principles of Political Economy and Taxation \item John Stuart Mill (1848) Principles of Political Economy with some of their Applications to Social Philosophy\end{itemize}
+\item Neoclassical Economics  \begin{itemize} \item Alfred Marshall (1890) Principles of Economics \end{itemize}
+\item Keynesian Revolution 
+ \begin{itemize} \item John Maynard Keynes (1936) The General Theory of Employment, Interest, and Money \end{itemize}
+\item Modern Economic Analysis
+  \begin{itemize} \item Paul Samuelson (1947) Foundations of Economic Analysis \end{itemize}
+\end{enumerate}   }
+\lyxframeend{}
+
+\lyxframe{(R)Evolution in Macroeconomics}
+{\small \begin{enumerate}
+\item Keynesian Macroeconomics and Neoclassical Synthesis (John Hicks, Alvin Hansen, Paul Samuelson, Franco Modigliani, James Tobin, Robert Solow, Lawrence Klein)
+\item Monetarism (Milton Friedman, Anna Schwartz, Karl Brunner, Allen Meltzer, Edmund Phelps; David Laidler, Michael Parkin, Alan Walters)
+\item New Classical Macroeconomics \begin{itemize}
+\item Rational Expectation Critique (Robert Lucas, Robert Barro, Thomas Sargent, and Neil Wallace)
+\item Real Business Cycle theorists (Finn Kydland and Edward Prescott) \end{itemize}
+\item New Keynesian Economics (George Akerlof, Janet Yellen, N. Gregory Mankiw, Peter Diamond, Dale Mortensen, Ben Bernanke, Mark Gertler) 
+\item New Growth Theory (Paul Romer, Philippe Aghion, Peter Howitt, Andrei Shleifer, Daron Acemoglu)
+\item Toward an integration: Dynamic Stochastic General Equilibrium (DSGE) (Michael Woodford and Jordi Gal\'{i})
+\end{enumerate} }     
+\lyxframeend{}
+
+\lyxframe{}
+\includegraphics[height=3in]{f1/het1}\\ 
+\tiny \url{https://piigsty.com/category/economics-101/}\lyxframeend{}
+
+\lyxframe{}
+\includegraphics[height=2.9in]{f1/het2}\\ 
+\tiny \url{https://piigsty.com/category/economics-101/} \lyxframeend{}
+
+\lyxframe{The Great Depression 1929-1941 \href{https://www.federalreservehistory.org/essays/great-depression}{\tiny (w)}}
+{\small \textit{The longest and deepest downturn in the history of the United States and the modern industrial economy lasted more than a decade, beginning in 1929 and ending during World War II in 1941.}
+\begin{itemize}
+\item The Great Depression began in August 1929, when the economic expansion of the Roaring Twenties came to an end. 
+\item A series of financial crises punctuated the contraction. These crises included a stock market crash in 1929, a series of regional banking panics in 1930 and 1931, and a series of national and international financial crises from 1931 through 1933.
+\item The downturn hit bottom in March 1933, when the banking system collapsed and President Roosevelt declared a national banking holiday. 
+\item Sweeping reforms of the financial system accompanied the economic recovery, which was interrupted by a double-dip recession in 1937. Return to full output and employment occurred during the Second World War.
+\end{itemize}    
+\tiny Source: Federal Reserve History. \hfill \url{https://www.federalreservehistory.org/essays/great-depression}}  
+\lyxframeend{}
+
+\lyxframe{The Great Depression: Google Search Images}
+\centering \includegraphics[height=2.5in]{f1/gd} 
+\lyxframeend{}
+% https://www.federalreservehistory.org/essays/great-depression
+
+\lyxframe{The Great Depression and The General Theory}
+{\small \begin{itemize}
+\item Without the Great Depression, The General Theory of Employment, Interest and Money (1936) would not have seen the light of day. 
+\item Keynes's aim in writing this book was to elucidate the causes of the mass unemployment that affected all major economies at that time, and to suggest policy measures that could be taken to solve the problem. 
+\item This was a time of great disarray with no remedy at hand to fix the ailing economic system. In most countries, the unemployment rate was soaring and deflationary policies had failed. There was little room in economic theory for unemployment. 
+\item The notion of frictional unemployment had started to be evoked but it had little theoretical content. So, faced with the looming presence of the Great Depression, Keynes realised that monetary theory was blatantly wanting, and needed to be reformed.
+\end{itemize}  
+\footnotesize M. De Vroey and P. Malgrange (2011) The History of Macroeconomics from Keynes's General Theory to the Present. Discussion Paper 2011-28.}
+\lyxframeend{}
+
+\lyxframe{Keynes and the Great Depression}
+{\small The history of modern macroeconomics starts with the publication of John Maynard Keynes's General Theory of Employment, Interest, and Money in 1936. The General Theory is in fact business cycle theory that emphasizes effective demand (aggregate demand): Effective demand determines output.
+\begin{itemize}
+\item Few economists during the 1930s could provide a coherent explanation for the depth and breadth of the Great Depression. 
+\item Keynes' General Theory delivered an intellectual framework to explain events and guide policy. Keynes emphasized what we now call aggregate demand. In particular, Keynes stressed the slow adjustment back to the natural level of output after an adverse demand shock. 
+\item The General Theory introduced a number of ideas--the multiplier, money demand, liquidity trap, and the importance of expectation--that are fundamental to modern macroeconomics.
+\end{itemize} 
+\hfill \footnotesize Source: Olivier Blanchard (2021), Ch24, Macroeconomics, 8e, Pearson.}
+\lyxframeend{}
+
+\lyxframe{Keynes and The General Theory}
+{\small The General Theory was more than a treatise for economists. It offered clear policy recommendations, and they were in tune with the times: Waiting for the economy to recover by itself was irresponsible. In the midst of a depression, trying to balance the budget was not only stupid, it was dangerous. Active use of fiscal policy was essential to return the country to high employment. Keynes built the building blocks of modern macroeconomics:
+\begin{itemize}
+\item The relation of consumption, to income and the multiplier effects
+\item Liquidity preference in the demand for money that explains how monetary policy affect interest rates and aggregate demand
+\item The importance of expectations in affecting consumption and investment; and shifts in expectations (animal spirits) behind shifts in demand and output (boom and bust)
+\end{itemize} 
+\hfill \footnotesize Source: Olivier Blanchard (2021), Ch24, Macroeconomics, 8e, Pearson.}
+\lyxframeend{}
+
+\lyxframe{Keynesian Macroeconomics \href{https://www.econlib.org/library/Enc/KeynesianEconomics.html}{\tiny(w)}} 
+{\small Keynesian economics dominated economic theory and policy after WWII until the 1970s. It is a theory of total spending in the economy (aggregate demand) and its effects on output and inflation. Key tenets include
+\begin{enumerate}
+\item Aggregate demand is influenced by a host of economic decisions, both public and private, and sometimes behaves erratically. 
+\item Changes in aggregate demand, whether anticipated or unanticipated, have their greatest short-run effect on real output and employment, not on prices. %{\color{cyan}$Y^*=AS=AD$ in the short run.}
+\item Prices, and especially wages, respond slowly to changes in supply and demand, resulting in periodic shortages and surpluses, especially of labor. 
+\item Many Keynesians advocate activist stabilization policy to reduce the amplitude of the business cycle. 
+\end{enumerate} 
+\hfill \tiny \url{https://www.econlib.org/library/Enc/KeynesianEconomics.html}}
+\lyxframeend{}
+
+\lyxframe{Classical vs Keynesian Macroeconomics}
+{\small \begin{itemize}
+\item The classical approach to macroeconomics is based on the assumptions that individuals and firms act in their own best interests and that wages and prices adjust quickly to achieve equilibrium in all markets.
+\item Under these assumptions the invisible hand of the free-market works well, with only a limited scope for government intervention in the economy.
+\item The Keynesian approach to macroeconomics assumes that wages and prices do not adjust rapidly and thus the invisible hand may not work well. 
+\item Keynesians argue that, because of slow wage and price adjustment, unemployment may remain high for a long time. 
+\item Keynesians are usually more inclined than classicals to believe that government intervention in the economy may help improve economic performance.
+\end{itemize}
+\hfill \scriptsize Source: Abel, Bernanke, and Croushore (2020), CH1, Macroeconomics, 10e, Pearson.}  
+\lyxframeend{}
+
+\lyxframe{}
+\includegraphics[height=3in]{f1/kvc}\\ 
+\tiny \url{https://www.thebalance.com/keynesian-economics-theory-definition-4159776}
+\lyxframeend{}
+
+\lyxframe{Keynesian Economics: Neoclassical Synthesis}
+{\small \begin{itemize}
+\item According to Keynes, the classics saw the price system in a free economy as efficiently guiding the mutual adjustment of supply and demand in all markets, including the labor market. Unemployment could arise only because of a market imperfection--the government intervention or the action of labor unions--and could be eliminated. 
+\item In the 1950s, Keynesian economists achieved a measure of reconciliation with the classics. Paul Samuelson argued for a "neoclassical synthesis" in which classical economics was viewed as governing resource allocation when the economy was kept at full employment through macro policies. 
+\item Other Keynesian economists sought to explain consumption, investment, the demand for money, and other key elements of the aggregate Keynesian model in a manner consistent with the assumption that individuals behave optimally. This was the program of "microfoundations for macroeconomics." The Neoclassical Synthesis, however, omitted the role of expectations and wage-price adjustment.\\
+\vspace{0.5em} \hfill \tiny \url{https://www.econlib.org/library/Enc/NewClassicalMacroeconomics.html}
+\end{itemize}}
+\lyxframeend{}
+
+% \item According to Keynes, the classics saw the price system in a free economy as efficiently guiding the mutual adjustment of supply and demand in all markets, including the labor market. Unemployment could arise only because of a market imperfection--the government intervention or the action of labor unions--and could be eliminated. 
+%\item In contrast, Keynes shifted the focus of his analysis away from individual markets to the whole economy. He argued that even without market imperfections, aggregate demand might fall short of the aggregate productive capacity of its labor and capital. In such a situation, unemployment is largely involuntary.
+
+\lyxframe{Neoclassical Synthesis}
+{\small By the early 1950s, a consensus had emerged around an interpretation and extension of Keynes' ideas. 
+\begin{itemize}
+\item John Hicks (1930s) and Alvin Hansen (1940s) constructed IS-LM model. Hicks won the Nobel prize in 1972.
+\item Franco Modigliani (1950) and Milton Friedman (1957) developed the theory of consumption. Friedman was awarded Nobel prize in 1976 and Modigliani 1985.
+\item James Tobin developed the theory of investment, the theory of money demand and the portfolio selection theory. Nobel laureate of 1981.
+\item Robert Solow (1956) developed the theory of economic growth. Nobel laureate of 1987. 
+\item Lawrence Klein (1950s) pioneered the first econometric models for the analysis of economic fluctuations and policies. Nobel laureate of 1980.
+\end{itemize} 
+\hfill \tiny \url{https://www.nobelprize.org/prizes/lists/all-prizes-in-economic-sciences/}}
+\lyxframeend{}
+% James Tobin developed the theory of investment (which was further developed and tested by Jorgensen), and Tobin also developed the theory of money demand and, more generally, portfolio selection. These developments were embodied in large macroeconomic models, pioneered by Klein. 
+
+\lyxframe{Monetarism and Monetarists \href{https://www.econlib.org/library/Enc/Monetarism.html}{\tiny (w)}}
+{\small \begin{itemize}
+\item Monetarism is a macroeconomic school of thought that emphasizes (1) long-run monetary neutrality, (2) short-run monetary nonneutrality, (3) the distinction between real and nominal interest rates, and (4) the role of monetary aggregates in policy analysis.
+\item Two fundamental monetarist propositions are (1) that cyclical movements in nominal income are primarily attributable to movements in the stock of money, and, (2) that there is no permanent trade-off between unemployment and inflation. 
+\item All monetarists emphasized the undesirability of combating inflation by nonmonetary means, such as wage and price controls or guidelines, because these would create market distortions. They stressed, in other words, that ongoing inflation is fundamentally monetary in nature, a viewpoint foreign to most Keynesians of the time.
+\end{itemize}
+{\tiny \hfill \url{https://www.econlib.org/library/Enc/Monetarism.html}}}
+\lyxframeend{}
+
+\lyxframe{Monetarists vs Keynesians}
+{\small The debate between Keynesians and monetarists centered on three issues.
+\begin{itemize}
+\item Monetary versus fiscal policy: monetarists questioned the emphasis of the early Keynesians on the power of fiscal policy to stabilize output. Instead, monetarists emphasized the power of monetary policy to destabilize the economy in the absence of a money growth rule to constrain the Fed. 
+\item The Phillips curve: many Keynesians believed that the Phillips curve offered a permanent long-run tradeoff between inflation and unemployment. Milton Friedman and Edmund Phelps argued that the tradeoff would disappear if policymakers tried to exploit it.
+\item The role of policy: Keynesians believed that fiscal and monetary policy could be used to fine tune macroeconomic performance to avoid fluctuations. Monetarists argued instead that economists did not know enough to stabilize output and that in any event, policymakers could not be trusted to do the right thing. Therefore, policymakers should be bound by simple rules.
+\end{itemize}
+\hfill \scriptsize Source: Olivier Blanchard (2021), Ch24, Macroeconomics, 8e, Pearson.}
+\lyxframeend{}
+% The dissent from the mainstream consensus at this time was represented by monetarists, led by Friedman, who questioned both that governments wanted to do good and that they actually knew enough to succeed. The debate between Keynesians and monetarists centered on three issues: monetary versus fiscal policy, the nature of the Phillips curve, and the role of policy.
+
+\lyxframe{Rational Expectations Revolution}
+{\small \begin{itemize}
+\item The mainstream consensus of the 1960s received two challenges in the 1970s. The first challenge was empirical. Aggregate demand shocks could not account for stagflation (simultaneous increases in inflation and unemployment) which arose during the 1970s. 
+\item The second challenge was intellectual. The new rational expectations view argued that people form expectations about the future using all available information, including economic theory and econometric models, rather than solely on the basis of the past behavior of the variables they are trying to forecast. This idea posed three challenges for Keynesian macroeconomics: Lucas critique, Philips curve puzzle, and policy control.
+\item Rational expectations implied that Keynesian models could not be used to evaluate potential policy measures, that Keynesian models could not explain persistent deviations of output from its natural level, and that the theory of policy needed to be redesigned via the tools of game theory. 
+\end{itemize} 
+\hfill \scriptsize Source: Olivier Blanchard (2021), Ch24, Macroeconomics, 8e, Pearson.}     
+\lyxframeend{}
+
+\lyxframe{Rational Expectations: Lucas Critique \href{https://www.econlib.org/library/Enc/RationalExpectations.html}{\tiny (w)} }
+{\small Robert E. Lucas Jr. (1995 Nobel laureate) developed and applied the hypothesis of rational expectations, and thereby transformed macroeconomic analysis and deepened our understanding of economic policy.\\ {\hfill \tiny \url{https://www.nobelprize.org/prizes/economic-sciences/1995/summary/}}
+\begin{itemize}
+\item Rational expectations undermines the idea that policymakers can manipulate the economy by systematically "fooling" the public. 
+\item Lucas showed that if expectations are rational, it simply is not possible for the government to manipulate those forecast errors in a predictable and reliable way for the very reason that the errors made by a rational forecaster are inherently unpredictable. 
+\item Lucas's work led to what has sometimes been called the "policy ineffectiveness proposition." If people have rational expectations, policies that try to manipulate the economy by inducing people into having false expectations may introduce more "noise" into the economy but cannot, on average, improve the economy's performance.
+\end{itemize} 
+{\tiny \hfill \url{https://www.econlib.org/library/Enc/RationalExpectations.html}} }
+\lyxframeend{}
+%The "new classical macroeconomics" term applies to the works of Robert E. Lucas Jr. (1995 Nobel laureate) and his allies.
+
+\lyxframe{New Classical Macroeconomics \href{https://www.econlib.org/library/Enc/NewClassicalMacroeconomics.html}{\tiny (w)}}
+{\small The new classical macroeconomics originated in the early 1970s in the work of economists centered at the Universities of Chicago and Minnesota--particularly, Robert Lucas (1995 Nobel laureate), Thomas Sargent (2011 Nobel laureate), Neil Wallace, and Edward Prescott (2004 Nobel laureate).
+\begin{itemize}
+\item The research agenda of the new classical theorists consists of an attempt to explain macroeconomic fluctuations as the outcome of shocks to competitive markets with fully flexible wages and prices. These so-called real business cycle models assume that output is always at its natural level, and interpret fluctuations as arising from movements in the natural level, triggered by technological changes. 
+\item The problem with this view is that the nature of technological progress does not seem consistent with the types of output fluctuations typically associated with business cycles. Moreover, although in real business cycle models the money supply is irrelevant to output, there is strong evidence that changes in money affect output.
+\end{itemize} {\tiny \hfill \url{https://www.econlib.org/library/Enc/NewClassicalMacroeconomics.html}}}
+\lyxframeend{}
+
+\lyxframe{Keynesian vs New Classical Macroeconomics}
+\includegraphics[height=2.72in]{f1/kvnc}\\ 
+\tiny Source: De Vroey and Malgrange (2011) \lyxframeend{}
+
+\lyxframe{New Keynesian Economics \href{https://www.econlib.org/library/Enc/NewKeynesianEconomics.html}{\tiny (w)}}
+{\small In the 1980s, in response to the new classical critique of the 1970s, New Keynesian economics evolved with adjustments to the Keynesian tenets. 
+\begin{itemize}
+\item The primary disagreement between New Classical and New Keynesian economists is over how quickly wages and prices adjust. 
+\item New Keynesian theories rely on the stickiness of wages and prices to explain why involuntary unemployment exists and why monetary policy has such a strong influence on economic activity.
+\item The elements of New Keynesian Economics--such as menu costs, staggered prices, coordination failures, and efficiency wages--represent substantial deviations from the assumptions of Classical Economics, which provides the intellectual basis for the justification of laissez-faire. 
+\item At the broadest level, new Keynesian economics suggests that recessions are departures from the normal efficient functioning of markets and caused by some economy-wide market failure. Thus, new Keynesian economics provides a rationale for government intervention.\\ \vspace{0.5em}
+\hfill \tiny \url{https://www.econlib.org/library/Enc/NewKeynesianEconomics.html}
+\end{itemize} }
+\lyxframeend{}
+
+%==============================================
+\section{}
+
+\lyxframe{Quotes by John Maynard Keynes} \footnotesize
+\textit{The long run is a misleading guide to current affairs. In the long run we are all dead.}\\ 
+\hfill --A Tract on Monetary Reform (1923) Ch3.\\ \vspace{0.5em}
+\textit{The ideas of economists and political philosophers, both when they are right and when they are wrong, are more powerful than is commonly understood. Indeed the world is ruled by little else. Practical men, who believe themselves to be quite exempt from any intellectual influences, are usually the slaves of some defunct economist.}\\
+\hfill  --The General Theory of Employment, Interest and Money (1936).\\ \vspace{0.5em}
+\textit{The political problem of mankind is to combine three things: economic efficiency, social justice and individual liberty.}\\ 
+\hfill --The collected writings of Keynes (ed. 1972).\\ \vspace{0.5em}
+\textit{The phrase laissez-faire is not to be found in the works of Adam Smith, of Ricardo, or of Malthus. Even the idea is not present in a dogmatic form in any of these authors. Adam Smith, of course, was a Free Trader and an opponent of many eighteenth-century restrictions on trade. But his attitude towards the Navigation Acts and the usury laws shows that he was not dogmatic. Even his famous passage about 'the invisible hand' reflects the philosophy which we associate with Paley rather than the economic dogma of laissez-faire.}\\
+\hfill --The End of Laissez-faire (1926) Ch2.
+\lyxframeend{}
+% \textit{In truth, the gold standard is already a barbarous relic.} Monetary Reform (1924), p. 172.\\  
+
+\lyxframe{Quotes by John Maynard Keynes} \footnotesize
+\textit{The study of economics does not seem to require any specialized gifts of an unusually high order. Is it not, intellectually regarded, a very easy subject compared with the higher branches of philosophy or pure science? An easy subject at which few excel! The paradox finds its explanation, perhaps, in that the master-economist must possess a rare combination of gifts. He must reach a high standard in several different directions and must combine talents not often found together. He must be mathematician, historian, statesman, philosopher - in some degree. He must understand symbols and speak in words. He must contemplate the particular in terms of the general, and touch abstract and concrete in the same flight of thought. He must study the present in the light of the past for the purposes of the future.}\\
+{\tiny \hfill John M. Keynes (1924) "Alfred Marshall, 1842-1924." The Economic Journal, 34 (135): 311-372.}\\
+\vspace{0.5em}
+
+\textit{--It is better to be roughly right than precisely wrong.}\\ 
+\textit{--The markets are moved by animal spirits, and not by reason.}\\
+\textit{--Successful investing is anticipating the anticipations of others.}\\
+\textit{--The market can stay irrational longer than you can stay solvent.}\\
+\textit{--If you owe your bank a hundred pounds, you have a problem. But if you owe a million, it has.}\\ 
+\tiny \hfill \url{https://libquotes.com/john-maynard-keynes}
+\lyxframeend{}
+
+%\textit{--It is better to be roughly right than precisely wrong.}\\ \\
+%\textit{--Like Odysseus, the President looked wiser when he was seated.}\\ \\
+%\textit{--It is ideas, not vested interests, which are dangerous for good or evil.}\\ \\
+%\textit{--The difficulty lies, not in the new ideas, but in escaping from the old ones.}\\ \\
+%\textit{--When my information changes, I alter my conclusions. What do you do, sir?}\\ 
+
+\lyxframe{Web References}
+{\bf U.S. Economy: Data and Indicators}\\ \footnotesize
+\url{https://www.bea.gov/news/glance}\\
+\url{https://www.bls.gov/eag/eag.us.htm}\\
+\url{https://usafacts.org/data/topics/economy}\\
+\url{https://www.census.gov/economic-indicators}
+\url{www.cbo.gov/about/products/budget-economic-data}\\
+\url{https://www.conference-board.org/research/us-forecast}\\
+\vspace{0.5em}
+
+\url{https://fred.stlouisfed.org}\\
+\url{https://fiscaldata.treasury.gov}\\
+\url{https://www.federalreserve.gov/data.htm}\\
+\url{https://stlouisfed.shinyapps.io/macro-snapshot}\\
+\url{https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm}
+\vspace{0.5em}
+
+{\bf U.S. President Economic Indicators and Reports}\\ 
+\url{https://www.govinfo.gov/app/collection/econi}\\
+\url{https://www.govinfo.gov/app/collection/erp}\\ 
+\url{https://www.cbo.gov/topics/economy}\\
+\lyxframeend{}
+
+
+\lyxframe{Textbook References} \footnotesize
+N. G. Mankiw (2021) Principles of Economics, 9e, Cengage\\
+\vspace{0.1em} 
+Olivier Blanchard (2021) Macroeconomics, 8e, Pearson\\
+\vspace{0.1em} 
+R. Miller (2021) Economics Today Macro View, 20e, Pearson\\
+\vspace{0.1em} 
+Kennedy and Pray (2017) Macroeconomic Essentials, 4e, MIT\\
+\vspace{0.1em} 
+Acemoglu, Laibso, and List (2022) Macroeconomics, 3e, Pearson\\
+\vspace{0.1em} 
+Goolsbee, Levitt, and Syverson (2020) Microeconomics, 3e, Worth\\
+\vspace{0.1em}
+Bade and Parkin (2021) Foundations of Macroeconomics, 9e, Pearson\\
+\vspace{0.1em} 
+Abel, Bernanke, and Croushore (2020) Macroeconomics, 10e, Pearson\\
+\vspace{0.1em} 
+Baumol, Blinder, and Solow (2020) Economics: Principles and Policy, 14e, Cengage\\
+\vspace{0.1em}  
+F. Mishkin (2022) The Economics of Money, Banking, and Financial Markets, 13e, Pearson.
+\vspace{0.5em}
+
+Dudley Dillard (1978) Revolutions in Economic Theory. Southern Economic Journal, 44 (4), 705-724.\\
+\vspace{0.2em} 
+M. De Vroey and P. Malgrange (2011) The History of Macroeconomics from Keynes's General Theory to the Present. Discussion Paper 28.\\
+\vspace{0.2em}
+Emi Nakamura and Jon Steinsson (2018) Identification in Macroeconomics. Journal of Economic Perspectives, 32 (3), 59-86.
+\lyxframeend{}
+
+
+\lyxframe{Web References} 
+{\bf Econlib Encyclopedia\\ \url{https://www.econlib.org/cee/}}\\
+
+John Maynard Keynes 1883-1946 \href{https://www.econlib.org/library/Enc/bios/Keynes.html}{(w)}\\
+
+Great Depression By Gene Smiley \href{https://www.econlib.org/library/Enc/GreatDepression.html}{(w)}\\
+
+Keynesian Economics By Alan S. Blinder
+\href{https://www.econlib.org/library/Enc/KeynesianEconomics.html}{(w)}\\
+
+Monetarism By Bennett T. McCallum \href{https://www.econlib.org/library/Enc/Monetarism.html}{(w)}\\
+
+Rational Expectations By Thomas J. Sargent \href{https://www.econlib.org/library/Enc/RationalExpectations.html}{(w)}\\
+
+New Classical Macroeconomics By Kevin D. Hoover \href{https://www.econlib.org/library/Enc/NewClassicalMacroeconomics.html}{(w)}\\
+
+New Keynesian Economics By N. Gregory Mankiw \href{https://www.econlib.org/library/Enc/NewKeynesianEconomics.html}{(w)}\\
+\vspace{0.5em}
+
+{\bf New World Encyclopedia - History of Econoimc Thought} \href{https://www.newworldencyclopedia.org/entry/History_of_economic_thought}{(w)}\\
+John Maynard Keynes {\tiny \url{https://www.newworldencyclopedia.org/entry/John_Maynard_Keynes}}\\
+Keynesian Economics {\tiny \url{https://www.newworldencyclopedia.org/entry/Keynesian_economics}}
+\lyxframeend{}
+
+
+%\lyxframe{End}
+%\LARGE Thank you and stay tuned!
+%\Large I will show you the yield curve before the coming of next financial crisis.
+
+%\begin{Definition}
+%Yield Curve: a curve that plots the interest rates, at a set point in time, of bonds having equal credit quality, but differing maturity dates.
+%\end{Definition}
+
+%\lyxframeend{}
+
+\end{document}
+%% 
