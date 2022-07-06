@@ -19,7 +19,7 @@ Textbook Slides:
 * International Finance (2021)
 * Financial Derivatives (2018)
 
-Textbook Notes: 
+Supplementary Notes: 
 * Corporate Finance
 * Data Analysis 
 * Micro Foundations 
