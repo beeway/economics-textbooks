@@ -44,7 +44,7 @@ https://sites.google.com/site/19bc3047/
 2020 Course Website - International Finance
 https://sites.google.com/site/19e437/
 
-# More to come! Fiat Lux!
+Fiat Lux, More to come!
 
 
 
