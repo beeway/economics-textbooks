@@ -1,6 +1,8 @@
 # Textbook Materials: Notes and Slides
 
-The project contains published textbook covers, lecture slides, student projects, and course links.
+The project contains published textbook materials, lecture slides, student projects, and course links.
+
+The paper "Teaching Principles of Economics in College" provides a guide to instructors and students.
 
 
 
