@@ -1,7 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\select@language {english}
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{The US Economy}{15}{0}{2}
-\beamer@sectionintoc {3}{Quantity Equation}{30}{0}{3}
-\beamer@sectionintoc {4}{Scientific Methods}{45}{0}{4}
-\beamer@sectionintoc {5}{History and Thought}{64}{0}{5}
