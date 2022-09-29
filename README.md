@@ -31,6 +31,7 @@ Supplementary Notes:
 * International Finance 
 
 
+# Course Websites
 2022 Principles of Microeconomics
 https://sites.google.com/view/price-theory
 
@@ -54,9 +55,7 @@ https://sites.google.com/site/19e160/
 
 
 
-
-
-Fiat Lux, More to come!
+# Fiat Lux, More to come!
 
 
 
