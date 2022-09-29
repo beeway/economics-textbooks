@@ -1,4 +1,4 @@
-# Textbook Materials: Notes and Slides
+# Connecting the dots: Textbook Project
 
 The project contains published textbook materials, lecture slides, student projects, and course links.
 
