@@ -15,21 +15,36 @@ The paper "Teaching Principles of Economics in College" provides a guide to inst
 
 
 Textbook Slides: 
-* Corporate Finance (2021) 
+* Microeconomics (2022)
 * Macroeconomics (2022)
+* Corporate Finance (2021) 
 * International Trade (2019)
 * International Finance (2021)
 * Financial Derivatives (2018)
 
 Supplementary Notes: 
-* Corporate Finance
 * Data Analysis 
-* Micro Foundations 
-* Macroeconomics 
-* International Finance 
 * Public Finance 
+* Macroeconomics
+* Micro Foundations  
+* Corporate Finance
+* International Finance 
 
 
+2022 Principles of Microeconomics
+https://sites.google.com/view/price-theory
+
+2022 Principles of Macroeconomics
+https://sites.google.com/view/money-theory
+
+2019 Course Webiste - International Trade
+https://sites.google.com/site/19bc3047/
+
+2020 Course Website - International Finance
+https://sites.google.com/site/19e437/
+
+2020 Course Website - Public Finance
+https://sites.google.com/site/20econ445/
 
 2019 Course Website - Macroeconomics
 https://sites.google.com/site/19bc3033/
@@ -37,14 +52,9 @@ https://sites.google.com/site/19bc3033/
 2020 Course Website - Microeconomics
 https://sites.google.com/site/19e160/
 
-2020 Course Website - Public Finance
-https://sites.google.com/site/20econ445/
 
-2019 Course Webiste - International Trade
-https://sites.google.com/site/19bc3047/
 
-2020 Course Website - International Finance
-https://sites.google.com/site/19e437/
+
 
 Fiat Lux, More to come!
 
