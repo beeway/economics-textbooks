@@ -19,8 +19,8 @@ Textbook Slides:
 * Macroeconomics (2022)
 * Corporate Finance (2021) 
 * International Trade (2019)
-* International Finance (2021)
 * Financial Derivatives (2018)
+* International Finance (2021)
 
 Supplementary Notes: 
 * Data Analysis 
