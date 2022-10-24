@@ -38,6 +38,9 @@ https://sites.google.com/view/price-theory
 2022 Principles of Macroeconomics
 https://sites.google.com/view/money-theory
 
+2023 International Finance
+https://sites.google.com/view/intfin
+
 2019 Course Webiste - International Trade
 https://sites.google.com/site/19bc3047/
 
