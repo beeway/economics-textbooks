@@ -41,6 +41,9 @@ https://sites.google.com/view/money-theory
 2023 International Macroeconomics & Finance
 https://sites.google.com/view/intfin
 
+2023 Research Methods & Statistics for Economics
+https://sites.google.com/view/stat-econ 
+
 2019 Course Webiste - International Trade
 https://sites.google.com/site/19bc3047/
 
