@@ -31,7 +31,7 @@ Supplementary Notes:
 * International Finance 
 
 
-# Course Websites
+# Current Course Websites
 2022 Principles of Microeconomics
 https://sites.google.com/view/price-theory
 
@@ -44,6 +44,8 @@ https://sites.google.com/view/intfin
 2023 Research Methods & Statistics for Economics
 https://sites.google.com/view/stat-econ 
 
+
+# Past Course Websites
 2019 Course Webiste - International Trade
 https://sites.google.com/site/19bc3047/
 
