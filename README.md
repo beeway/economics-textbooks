@@ -29,6 +29,7 @@ Supplementary Notes:
 * Micro Foundations  
 * Corporate Finance
 * International Finance 
+* Statistics for Economics
 
 
 # Current Course Websites
