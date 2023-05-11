@@ -1,4 +1,4 @@
-# Connecting the Dots: ECON-FINE Textbook Projects 
+# Connecting The Dots: ECON-FINA Textbook Projects 
 
 The project contains published textbook materials, lecture slides, student projects, and course links.
 
